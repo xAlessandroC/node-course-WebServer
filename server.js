@@ -33,12 +33,12 @@ app.use((req,res, next)=>{
   next();
 });
 
-app.use((req,res, next)=>{
+/*app.use((req,res, next)=>{
     res.render("maintenanceTemplate.hbs",{
       titlePage:"Under maintenance",
       maintenanceMessage:"Site will be up soon!",
     })
-});
+});*/
 
 app.get("/",(req,res)=>{
   res.render("homeTemplate.hbs",{

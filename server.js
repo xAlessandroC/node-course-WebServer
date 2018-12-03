@@ -61,6 +61,13 @@ app.get("/bad",(req,res)=>{
   });
 });
 
+app.get("/portfolio",(req,res)=>{
+  res.render("portfolio.hbs",{
+    messagePortfolio:"Welcome to my portfolio, it will be updated soon!",
+    titlePage:"Portfolio"
+  });
+});
+
 app.listen(port,()=>{
   console.log(`Server listening on port ${port}`);
 });
